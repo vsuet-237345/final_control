@@ -1,7 +1,7 @@
 import math
 
 # 5 Вариант
-def strangeBullshit(a: int):
+def strangeBullshit(a: int) -> int:
     amount = 0
     for i in range(1, n + 1):
         amount += int(math.pow(i, 3))
