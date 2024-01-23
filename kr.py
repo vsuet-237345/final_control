@@ -1,17 +1,14 @@
 import math
 
-# 3 Вариант
-def strangeBullshit(a: int, b: int):
-    if b >= a:
-        print('A должно быть больше B')
-        return
+# 5 Вариант
+def strangeBullshit(a: int):
+    amount = 0
+    for i in range(1, n + 1):
+        amount += int(math.pow(i, 3))
+    return amount
 
-    print('Нечётные числа:')
-    for i in range(b, a):
-        if math.fmod(i, 2):
-            print(i)
-
-a = int(input('Введите число A: '))
-b = int(input('Введите число B: '))
-
-strangeBullshit(a, b)
+n = int(input('Введите натуральное число N: '))
+if n <= 0:
+    print('N должно быть натуральным числом')
+else:
+    print('Сумма 1^3+.....n^3: ', strangeBullshit(n))
